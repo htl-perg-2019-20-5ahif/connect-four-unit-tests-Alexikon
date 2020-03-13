@@ -33,7 +33,7 @@ namespace ConnectFour.Tests
         {
             var b = new Board();
 
-            for(byte i = 0; i < 6; i++)
+            for (byte i = 0; i < 6; i++)
             {
                 b.AddStone(0);
             }
@@ -163,7 +163,7 @@ namespace ConnectFour.Tests
             {
                 win = b.AddStone(0);
 
-                if(win == 1)
+                if (win == 1)
                 {
                     break;
                 }

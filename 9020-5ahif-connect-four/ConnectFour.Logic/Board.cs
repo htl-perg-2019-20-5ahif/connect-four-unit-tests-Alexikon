@@ -7,7 +7,7 @@ namespace ConnectFour.Logic
         /// <summary>
         /// [Column, Row]
         /// </summary>
-        private readonly byte[,] GameBoard = new byte[7,6];
+        public readonly byte[,] GameBoard = new byte[7, 6];
 
         public int Turns = 0;
 
@@ -19,11 +19,11 @@ namespace ConnectFour.Logic
             {
                 throw new ArgumentOutOfRangeException(nameof(column));
             }
-            else if(Turns == 42)
+            else if (Turns == 42)
             {
                 throw new InvalidOperationException("Gameboard is full!");
             }
-            else if(ended)
+            else if (ended)
             {
                 throw new InvalidOperationException("Game already ended");
             }
@@ -53,7 +53,7 @@ namespace ConnectFour.Logic
             byte win;
 
             // Check for Vertical Win
-            if((win = CheckForVerticalWin(column, row)) != 0)
+            if ((win = CheckForVerticalWin(column, row)) != 0)
             {
                 return win;
             }
@@ -101,8 +101,8 @@ namespace ConnectFour.Logic
                 {
                     continue;
                 }
-                
-                for(int j = i; j >= i - 3; j--)
+
+                for (int j = i; j >= i - 3; j--)
                 {
                     if (GameBoard[j, row] != player)
                     {
@@ -113,13 +113,13 @@ namespace ConnectFour.Logic
                     count++;
                 }
 
-                if(count == 4)
+                if (count == 4)
                 {
                     break;
                 }
             }
 
-            return count == 4 ? player : (byte) 0;
+            return count == 4 ? player : (byte)0;
         }
 
         private byte CheckForDiagonalWin(byte column, byte row, int direction)
@@ -127,13 +127,13 @@ namespace ConnectFour.Logic
             byte player = GameBoard[column, row];
             byte count = 0;
 
-            while(true)
+            while (true)
             {
-                if(column >= 7 || row >= 6)
+                if (column >= 7 || row >= 6)
                 {
                     break;
                 }
-                else if(GameBoard[column, row] != player)
+                else if (GameBoard[column, row] != player)
                 {
                     break;
                 }
@@ -147,11 +147,11 @@ namespace ConnectFour.Logic
 
             while (true)
             {
-                if(column >= 7 || row >= 6)
+                if (column >= 7 || row >= 6)
                 {
                     break;
                 }
-                else if(count == 4)
+                else if (count == 4)
                 {
                     break;
                 }

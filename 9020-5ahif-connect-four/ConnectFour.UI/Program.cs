@@ -11,7 +11,7 @@ namespace ConnectFour.UI
             byte win = 0;
 
             // Logik des Spiels
-            while(!board.ended)
+            while (!board.ended)
             {
                 // Ausgeben des Spielbretts
                 Console.WriteLine("Spielbrett:");
@@ -51,9 +51,9 @@ namespace ConnectFour.UI
                     Console.WriteLine();
                     continue;
                 }
-                catch(InvalidOperationException e)
+                catch (InvalidOperationException e)
                 {
-                    switch(e.Message)
+                    switch (e.Message)
                     {
                         case "Gameboard is full!":
                             Console.Error.WriteLine("Das Spielbrett ist schon voll befüllt!");

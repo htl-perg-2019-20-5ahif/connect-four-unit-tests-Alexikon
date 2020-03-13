@@ -1,0 +1,390 @@
+﻿<Window x:Class="ConnectFour.WPFUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConnectFour.WPFUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="660" Width="740">
+    <StackPanel Margin="20">
+        <Canvas Height="560" Width="650" Background="LightBlue" x:Name="CanvasBoard" Margin="20" MouseLeftButtonDown="CanvasBoard_MouseLeftButtonDown">
+            <Ellipse x:Name="Field50"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="20"
+                    Canvas.Top="20"/>
+
+            <Ellipse x:Name="Field51"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="110"
+                    Canvas.Top="20"/>
+
+            <Ellipse x:Name="Field52"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="200"
+                    Canvas.Top="20"/>
+
+            <Ellipse x:Name="Field53"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="290"
+                    Canvas.Top="20"/>
+
+            <Ellipse x:Name="Field54"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="380"
+                    Canvas.Top="20"/>
+
+            <Ellipse x:Name="Field55"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="470"
+                    Canvas.Top="20"/>
+
+            <Ellipse x:Name="Field56"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="560"
+                    Canvas.Top="20"/>
+
+            <Ellipse x:Name="Field40"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="20"
+                    Canvas.Top="110"/>
+
+            <Ellipse x:Name="Field41"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="110"
+                    Canvas.Top="110"/>
+
+            <Ellipse x:Name="Field42"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="200"
+                    Canvas.Top="110"/>
+
+            <Ellipse x:Name="Field43"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="290"
+                    Canvas.Top="110"/>
+
+            <Ellipse x:Name="Field44"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="380"
+                    Canvas.Top="110"/>
+
+            <Ellipse x:Name="Field45"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="470"
+                    Canvas.Top="110"/>
+
+            <Ellipse x:Name="Field46"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="560"
+                    Canvas.Top="110"/>
+
+            <Ellipse x:Name="Field30"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="20"
+                    Canvas.Top="200"/>
+
+            <Ellipse x:Name="Field31"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="110"
+                    Canvas.Top="200"/>
+
+            <Ellipse x:Name="Field32"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="200"
+                    Canvas.Top="200"/>
+
+            <Ellipse x:Name="Field33"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="290"
+                    Canvas.Top="200"/>
+
+            <Ellipse x:Name="Field34"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="380"
+                    Canvas.Top="200"/>
+
+            <Ellipse x:Name="Field35"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="470"
+                    Canvas.Top="200"/>
+
+            <Ellipse x:Name="Field36"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="560"
+                    Canvas.Top="200"/>
+
+            <Ellipse x:Name="Field20"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="20"
+                    Canvas.Top="290"/>
+
+            <Ellipse x:Name="Field21"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="110"
+                    Canvas.Top="290"/>
+
+            <Ellipse x:Name="Field22"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="200"
+                    Canvas.Top="290"/>
+
+            <Ellipse x:Name="Field23"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="290"
+                    Canvas.Top="290"/>
+
+            <Ellipse x:Name="Field24"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="380"
+                    Canvas.Top="290"/>
+
+            <Ellipse x:Name="Field25"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="470"
+                    Canvas.Top="290"/>
+
+            <Ellipse x:Name="Field26"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="560"
+                    Canvas.Top="290"/>
+
+            <Ellipse x:Name="Field10"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="20"
+                    Canvas.Top="380"/>
+
+            <Ellipse x:Name="Field11"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="110"
+                    Canvas.Top="380"/>
+
+            <Ellipse x:Name="Field12"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="200"
+                    Canvas.Top="380"/>
+
+            <Ellipse x:Name="Field13"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="290"
+                    Canvas.Top="380"/>
+
+            <Ellipse x:Name="Field14"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="380"
+                    Canvas.Top="380"/>
+
+            <Ellipse x:Name="Field15"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="470"
+                    Canvas.Top="380"/>
+
+            <Ellipse x:Name="Field16"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="560"
+                    Canvas.Top="380"/>
+
+            <Ellipse x:Name="Field00"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="20"
+                    Canvas.Top="470"/>
+
+            <Ellipse x:Name="Field01"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="110"
+                    Canvas.Top="470"/>
+
+            <Ellipse x:Name="Field02"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="200"
+                    Canvas.Top="470"/>
+
+            <Ellipse x:Name="Field03"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="290"
+                    Canvas.Top="470"/>
+
+            <Ellipse x:Name="Field04"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="380"
+                    Canvas.Top="470"/>
+
+            <Ellipse x:Name="Field05"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="470"
+                    Canvas.Top="470"/>
+
+            <Ellipse x:Name="Field06"
+                    Fill="White"
+                    Width="70"
+                    Height="70"
+                    Stroke="Black"
+                    StrokeThickness="4"
+                    Canvas.Left="560"
+                    Canvas.Top="470"/>
+        </Canvas>
+    </StackPanel>
+</Window>
