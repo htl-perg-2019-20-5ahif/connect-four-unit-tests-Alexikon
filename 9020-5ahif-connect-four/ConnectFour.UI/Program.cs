@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConnectFour.Logic;
+using System;
 
 namespace ConnectFour.UI
 {
@@ -6,7 +7,7 @@ namespace ConnectFour.UI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
