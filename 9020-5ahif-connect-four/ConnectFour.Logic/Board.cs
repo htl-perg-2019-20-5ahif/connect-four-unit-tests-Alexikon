@@ -9,9 +9,9 @@ namespace ConnectFour.Logic
         /// </summary>
         private readonly byte[,] GameBoard = new byte[7,6];
 
-        internal int Turns = 0;
+        public int Turns = 0;
 
-        internal bool ended = false;
+        public bool ended = false;
 
         public byte AddStone(byte column)
         {
@@ -131,14 +131,10 @@ namespace ConnectFour.Logic
             {
                 if(column >= 7 || row >= 6)
                 {
-                    column++;
-                    row += (byte)(1 * direction);
                     break;
                 }
                 else if(GameBoard[column, row] != player)
                 {
-                    column++;
-                    row += (byte)(1 * direction);
                     break;
                 }
 
@@ -146,7 +142,10 @@ namespace ConnectFour.Logic
                 row -= (byte)(1 * direction);
             }
 
-            while(true)
+            column++;
+            row += (byte)(1 * direction);
+
+            while (true)
             {
                 if(column >= 7 || row >= 6)
                 {
@@ -167,6 +166,18 @@ namespace ConnectFour.Logic
             }
 
             return count == 4 ? player : (byte)0;
+        }
+
+        public void PrintBoard()
+        {
+            for (int i = 5; i >= 0; i--)
+            {
+                for (int j = 0; j < 7; j++)
+                {
+                    Console.Write(GameBoard[j, i] + " ");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
