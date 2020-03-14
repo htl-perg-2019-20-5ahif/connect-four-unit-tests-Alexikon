@@ -48,10 +48,11 @@ namespace ConnectFour.WPFUI
                         MessageBox.Show($"Die Spalte {column} ist schon befüllt!");
                         break;
                 }
+                return;
             }
             catch(ArgumentOutOfRangeException)
             {
-
+                return;
             }
 
             for (; row >= 0; row--)
