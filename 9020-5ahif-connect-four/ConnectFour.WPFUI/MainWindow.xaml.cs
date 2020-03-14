@@ -49,6 +49,10 @@ namespace ConnectFour.WPFUI
                         break;
                 }
             }
+            catch(ArgumentOutOfRangeException)
+            {
+
+            }
 
             for (; row >= 0; row--)
             {
