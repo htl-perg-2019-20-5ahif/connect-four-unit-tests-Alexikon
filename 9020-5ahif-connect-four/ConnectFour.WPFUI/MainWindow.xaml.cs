@@ -75,7 +75,7 @@ namespace ConnectFour.WPFUI
             {
                 if (string.Equals(fe.Name, $"Field{row}{column}"))
                 {
-                    fe.Fill = ((GameBoard.Turns - 1) % 2) == 0 ? Brushes.Red : Brushes.Yellow;
+                    fe.Fill = ((GameBoard.Turns - 1) % 2) == 0 ? Brushes.Yellow : Brushes.Red;
                     break;
                 }
             }
